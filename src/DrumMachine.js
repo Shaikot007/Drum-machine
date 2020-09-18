@@ -159,7 +159,7 @@ class DrumMachine extends Component {
           </div>
         </div>
         <footer>
-          <p>Designed by <a href="https://github.com/Shaikot007" target="_blank" rel="noopener noreferrer">Shaikot</a></p>
+          <p>Made by <a href="https://github.com/Shaikot007" target="_blank" rel="noopener noreferrer">Shaikot</a></p>
         </footer>
       </div>
     );
