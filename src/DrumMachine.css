@@ -62,11 +62,11 @@ header h5 {
 
 #drum-pad .drum-button button {
   margin: 4%;
-  padding: 2%; 
+  padding: 2%;
   height: 80px;
   width: 80px;
   font-size: calc(10px + 2vmin);
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: 4px 4px 4px #333;
 }
 
@@ -274,7 +274,7 @@ footer p a {
   #display { padding: 1%; height: 15%; font-size: calc(5px + 2vmin); }
   footer { margin: 10% }
   footer p { font-size: 12px; }
-} 
+}
 
 /* Media queries for phones */
 @media only screen and (min-width: 380px) and (max-width: 480px) {
@@ -288,7 +288,7 @@ footer p a {
   #display { padding: 1%; height: 20%; font-size: calc(5px + 2vmin); }
   footer { margin: 10% }
   footer p { font-size: 14px; }
-} 
+}
 
 /* Media queries for small width screen tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -302,7 +302,7 @@ footer p a {
   #display { padding: 1%; height: 20%; font-size: calc(5px + 2vmin); }
   footer { margin: 10% }
   footer p { font-size: 14px; }
-} 
+}
 
 /* Media queries for big width screen tablets */
 @media only screen and (min-width: 769px) and (max-width: 1320px) {

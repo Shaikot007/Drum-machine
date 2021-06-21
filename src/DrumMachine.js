@@ -59,51 +59,51 @@ class DrumMachine extends Component {
       power: true,
     }
   }
-  
+
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeydown);
-  }
+  };
 
   componentWillUnmount() {
     document.removeEventListener('keydown', this.handleKeydown);
-  }
+  };
 
   // For play audio
   playAudio = (keyTrigger, id) => {
-    if(this.state.power) {
+    if (this.state.power) {
       const sound = document.getElementById(keyTrigger);
       sound.currentTime = 0;
       sound.play();
       sound.volume = this.state.audioVolume;
       this.handleDisplay(id);
     }
-  }
+  };
 
   // For press a keyboard button
   handleKeydown = event => {
-    if(this.state.power) {
+    if (this.state.power) {
       const sound = SoundData.find(soundData => soundData.keyCode === event.keyCode);
       if (sound) {
         this.playAudio(sound.keyTrigger, sound.id);
       }
     }
-  }
+  };
 
   // For display a id name by click or press a keyboard button
   handleDisplay = (event) => {
     this.setState({
       display: event
     });
-  }
-  
+  };
+
   // For power button on off
   handlePower = () => {
     this.setState((state) => ({
       power: !state.power,
       display: 'Click or Press a Key'
     }))
-  }
-  
+  };
+
   // For volume slider
   adjustVolume = (event) => {
     if (this.state.power) {
@@ -113,16 +113,16 @@ class DrumMachine extends Component {
       });
       setTimeout(() => this.clearDisplay(), 1000);
     }
-  }
+  };
 
   // For clear volume value
   clearDisplay = () => {
     this.setState({
       display: String.fromCharCode(160)
     });
-  }
+  };
 
-  render () {
+  render() {
     return (
       <div id="drum-machine">
         <div className="drum-box">
@@ -164,6 +164,6 @@ class DrumMachine extends Component {
       </div>
     );
   }
-}
+};
 
 export default DrumMachine;
